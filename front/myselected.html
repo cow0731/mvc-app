@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맛집지도</title>
+    <meta name="author" content="author" />
+    <meta name="description" content="맛집지도 서비스" />
+    <meta name="keywords" content="맛집지도, 유튜버맛집, 맛집유튜버" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">Meock-VoCa</a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <div class="sign-container">
+        <!-- 비회원 -->
+        <div class="unsigned">
+          <a href="./signin.html">로그인/가입</a>
+        </div>
+
+        <!-- 회원 -->
+        <div class="signed hidden">
+          <div class="dropdown">
+            <div class="dropdown-button">
+              <span class="nickname"></span>님.
+            </div>
+            <div class="dropdown-content">
+              <button id="sign-out">로그아웃</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user">
+        <div>
+          <p class="app-sidebar__user-name"><span class="nickname"></span>님</p>
+          <p class="app-sidebar__user-designation">먹보카에 오신걸 환영합니다!</p>
+        </div>
+      </div>
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-home"></i><span class="app-menu__label">메인 화면</span></a></li>
+        <li><a class="app-menu__item" href="myselected.html"><i class="app-menu__icon fa fa-pencil-square-o"></i><span class="app-menu__label">나의 맛집 일지</span></a></li>
+        <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-trophy"></i><span class="app-menu__label">동네 먹 랭킹</span></a></li>
+        <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-random"></i><span class="app-menu__label">랜덤 음식점 추천</span></a></li>
+      </ul>
+    </aside>
+    <!-- <nav>
+      <div class="inner">
+        <div class="nav-container">
+          <h1 class="nav-title"><a href="./index.html">Meock-VoCa</a></h1>
+
+          
+        </div>
+      </div>
+    </nav> -->
+
+    <main class="app-content">
+      
+      <h2 class="category-title">나만의 맛집</h2>
+            
+      <div class="main-container">
+        <!-- 카카오지도 -->
+        <div id="map" class="inner main-child"></div>
+        <div id="store" class="main-child">
+          <div id="view_wrap" class="bg_white">
+            <ul id="storesList"></ul>
+          </div>
+        </div>
+    </div>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b7dc29a25a8d5b906c26e0a4a47af44f&libraries=services"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.twbsPagination.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+
+    <!-- pagenation
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+
+    <script src="./js/url.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/myMap.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

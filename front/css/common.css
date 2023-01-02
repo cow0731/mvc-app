@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "KyoboHandwriting2020A";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 10px;
+    font-family: "KyoboHandwriting2020A";
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* nav { */
+    /* background-color: #e69a06; */
+  /* } */
+  
+  .nav-container {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-title {
+    font-size: 3rem;
+  }
+  
+  .nav-contact {
+    font-size: 2.5rem;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .category-title {
+    font-size: 3.5rem;
+  }
+  
+  .category-item {
+    width: 25%;
+    height: 5rem;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.6rem;
+  }
+  
+  .category-item:hover {
+    color: #e69a06;
+    cursor: pointer;
+  }
+  
+  .inner {
+    padding: 0 1.5rem;
+  }
+  
+  @media all and (min-width: 1024px) {
+    .inner {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* 카카오맵 CSS */
+  
+  body {
+    height: 100%;
+  }
+  
+  nav {
+    height: 59px;
+    margin-top: 50px;
+  }
+  
+  main {
+    padding-top: 1.5rem;
+    height: calc(100% - 59px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #map {
+    flex-grow: 1;
+    width: 100%;
+    height: 300px;
+  }
+  
+  /* 회원용/비회원용 헤더 설정 */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-button {
+    font-family: inherit;
+    font-size: 2.5rem;
+    border: none;
+    background: none;
+  }
+  
+  /* 로그인 버튼 기본값: 숨김처리 */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    display: block;
+    font-size: 2rem;
+    font-family: inherit;
+    width: 100%;
+    border: none;
+  }
+  
+  .dropdown-content button:hover {
+    color: white;
+    background-color: #606060;
+  }
+  
+  /* 호버시 로그아웃 버튼 보이도록 설정 */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /*  */
+  
+  .sign-container {
+    font-size: 2.5rem;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    margin-left: auto;
+  }
+
+  .main-container {
+    display: flex;
+  }
+
+  #store {
+    width: 100%;
+  }
+
+  .main-child {
+    padding-left: 10px;
+  }
+
+  .bg_white {background:#fff;}
+  #view_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
+  #storesList {padding-left: 0px;}
+  #storesList li {list-style: none;}
+  #storesList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer;min-height: 45px;}
+  #storesList .item span {display: block;margin-top:4px;color: #333;}
+  #storesList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap; display: flex; justify-content: space-between;}
+  #storesList .item h5 {color: #333;font-weight:bold;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;margin-bottom: -15px;}
+  #storesList .item #vote_button {float: right;vertical-align:middle;margin-right: 10px;}
+  #storesList .item .info{padding:10px 0 10px 55px;}
+
+  #storesList .item .markerbg {float:left;position:absolute;width:30px; height:37px;margin:10px 0 0 10px;background:url(http://t1.daumcdn.net/localimg/localimages/07/2012/img/marker_normal.png) no-repeat;}
+  #storesList .item .marker_1 {background-position: -525px -10px;}
+  #storesList .item .marker_2 {background-position: -525px -48px;}
+  #storesList .item .marker_3 {background-position: -525px -86px;}
+  #storesList .item .marker_4 {background-position: -525px -124px;}
+  #storesList .item .marker_5 {background-position: -525px -162px;}
+  #storesList .item .marker_6 {background-position: -525px -200px;}
+  #storesList .item .marker_7 {background-position: -525px -238px;}
+  #storesList .item .marker_8 {background-position: -525px -276px;}
+  #storesList .item .marker_9 {background-position: -525px -314px;}
+  #storesList .item .marker_10 {background-position: -525px -352px;}
+
+  #storesList .item.active .marker_1 {background-position: -583px -10px;}
+  #storesList .item.active .marker_2 {background-position: -583px -48px;}
+  #storesList .item.active .marker_3 {background-position: -583px -86px;}
+  #storesList .item.active .marker_4 {background-position: -583px -124px;}
+  #storesList .item.active .marker_5 {background-position: -583px -162px;}
+  #storesList .item.active .marker_6 {background-position: -583px -200px;}
+  #storesList .item.active .marker_7 {background-position: -583px -238px;}
+  #storesList .item.active .marker_8 {background-position: -583px -276px;}
+  #storesList .item.active .marker_9 {background-position: -583px -314px;}
+  #storesList .item.active .marker_10 {background-position: -583px -352px;}
+
+  .page_wrap {
+    padding: 15px 0 5px 10px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  button#select_button {
+    margin-right: 15px;
+  }
+
+  .page-buttons {
+    position: relative;
+    padding: 1rem 0;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .button {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: #333;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+  
+  .button.active,
+  .button:hover {
+    color: #1f975d;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .prev {
+    position: absolute;
+    left: -2.5rem;
+  }
+  
+  .next {
+    position: absolute;
+    right: -2.5rem;
+  }
+  
+  ion-icon {
+    padding-top: 0.05rem;
+  }
