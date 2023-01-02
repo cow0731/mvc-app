@@ -13,7 +13,7 @@
     
 #### 3. DB 설계
 
-![image](https://user-images.githubusercontent.com/22956580/210199123-74fe5327-58a6-4190-be0e-1bea75bff6f8.png)
+![image](https://user-images.githubusercontent.com/22956580/210200377-b75e7444-b930-48d0-8377-2ea1c78a45d1.png)
 
 ##### users 테이블
 |이름|정의|
@@ -42,16 +42,21 @@
 #### 4. 구현화면
 
 [로그인 페이지]
+
 ![image](https://user-images.githubusercontent.com/22956580/210199762-baecffbe-c155-423e-bde6-8c22d3eb3155.png)
 
 [회원가입 페이지]
+
 ![image](https://user-images.githubusercontent.com/22956580/210200098-ff8373d1-871c-4c23-820c-c21a26b68cb0.png)
 
 [회원가입 Validation 처리]
+
 ![image](https://user-images.githubusercontent.com/22956580/210200134-4176c1cb-3086-46cb-9964-b4e6e7b6a1b9.png)
 
 [메인 페이지]
+
 ![image](https://user-images.githubusercontent.com/22956580/210200148-dc382440-3705-40e7-9fbf-82ebf2d5cf0f.png)
 
 [나의 맛집 일지 페이지]
+
 ![image](https://user-images.githubusercontent.com/22956580/210200167-a00510f6-9abf-4de8-bce6-be1795c8ae4f.png)
